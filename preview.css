@@ -15,9 +15,8 @@ body
 	max-width: 700px;
 	padding: -10px;
 	background:#0d192b;
-	border-radius: 5px;
-	border: 1px solid;
-  	box-shadow: 5px 10px 18px #0A3864;
+	border-radius:12px;
+	box-shadow: 5px 10px 18px #0A3864;*/
 
 }
 .inner
@@ -25,8 +24,7 @@ body
 	max-width: 700px;
 	padding: 25px 30px;
 	background:#0d192b;
-	border-radius: 25px;
-	padding:-41vw;
+	border-radius: 20px;
 
 }
 .img
@@ -45,11 +43,12 @@ body
 	display: block;
 	width:192px;
 	height:186px;
-	padding: 4px 13px;
+	padding: 19px 19px;
 	align-content: center;
 	margin-inline: auto;
-	background:#14255d;
-
+	background:hsl(214deg 50% 16%);
+	border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
 
 }
 .contents
@@ -57,10 +56,12 @@ body
 	width:192px;
 	height:186px;
 	display: block;
-	padding: 4px 13px;
+	padding: 4px 19px;
 	align-content: center;
 	margin-inline: auto;
-	background:#14255d;
+	background:hsl(214deg 50% 16%);
+	border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
 
 
 }
@@ -68,7 +69,6 @@ body
 {
 	display: block;
 	width:auto;
-	padding: -1px 10px;
 	align-content: center;
 	
 }
@@ -78,15 +78,15 @@ body
 	display: flex;
 	font-weight: bolder;
 	font-size: h2;
-	color:antiquewhite;
+	color:hsl(180deg 100% 99%);
 	padding:-2px;
 }
 .idetail
 {		
 	margin-top: 2vh;
 	display:flex;
-	font-size: 10px;
-	color:wheat;	
+	font-size: 12px;
+	color:hsl(216deg 23% 59%);	
 
 }
 .price
@@ -99,7 +99,10 @@ body
 
 }
 .pvalue{
-	flex: 50%;
+	flex: 100%;
+	display: flex;
+	align-items: center;
+
 }
 .dvalue
 {
@@ -119,7 +122,7 @@ body
 {
 	margin-top:4vh;
 	display: flex;
-	font-size: 10px;
+	font-size: 11px;
 
 }
 .img3
@@ -147,5 +150,15 @@ body
 }
 .cof{
 	padding-top: 5px;
+	color:hsl(216deg 23% 59%);
 }
 
+
+@media(max-width: 600px)
+{
+	body
+	{
+		background:hsl(9, 100%, 64%);
+
+	}
+}
